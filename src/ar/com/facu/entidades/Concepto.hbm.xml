@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="ar.com.facu.entidades.Concepto" table="concepto">
+
+        <id name="id" column="id" length="2">
+        	<generator class="native" />
+        </id>
+
+		<property name="descripcion">
+            <column name="descripcion" not-null="true" length="45" />
+        </property>
+	</class>
+</hibernate-mapping>

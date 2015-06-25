@@ -1,0 +1,21 @@
+CREATE TABLE `factura` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `punto_venta` int(4) NOT NULL,
+  `numero_comprobante` int(8) NOT NULL,
+  `fecha_emision` date NOT NULL,
+  `subtotal` decimal(8,2) NOT NULL,
+  `total` decimal(8,2) NOT NULL,
+  `cae` int(20) NOT NULL,
+  `vencimiento_cae` date NOT NULL,
+  `codigo_barra` int(40) NOT NULL,
+  `id_empresa` int(3) NOT NULL,
+  `id_cliente` int(11) NOT NULL,
+  `id_tipo_comprobante` int(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_empresa_factura_idx` (`id_empresa`),
+  KEY `FK_cliente_factura_idx` (`id_cliente`),
+  KEY `FK_tipo_comprobante_factura_idx` (`id_tipo_comprobante`),
+  CONSTRAINT `FK_cliente_factura` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `FK_empresa_factura` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `FK_tipo_comprobante_factura` FOREIGN KEY (`id_tipo_comprobante`) REFERENCES `tipo_comprobante` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+)

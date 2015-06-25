@@ -1,0 +1,19 @@
+#titulo {
+	font-family: Soft Elegance; 
+	font-size: 42px; 
+	margin: 15px 15px 30px 15px;
+}
+
+.facu {
+	font-family: Soft Elegance;
+	font-size: 14px;
+	background-color: #D9D9D7;
+}
+
+.facu span {
+	font-weight: bold;
+}
+
+.facu div span {
+	font-weight: bold;
+}

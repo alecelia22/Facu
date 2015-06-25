@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="ar.com.facu.entidades.Arancel" table="arancel">
+
+        <id name="id" column="id" length="11">
+        	<generator class="native" />
+        </id>
+
+		<property name="codigo">
+            <column name="codigo" not-null="true" length="5" />
+        </property>
+
+		<property name="descripcion">
+            <column name="descripcion" not-null="true" length="45" />
+        </property>
+
+		<property name="precioSocio">
+            <column name="precio_socio" not-null="true" length="8" />
+        </property>
+
+		<property name="precioNoSocio">
+            <column name="precio_no_socio" not-null="true" length="8" />
+        </property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,101 @@
+body {
+ 	margin: 0px;
+ 	overflow:hidden;
+}
+ 
+#accordion {
+    list-style: none;
+    padding: 0 0 0 0;
+    width: 170px;
+    margin: 0px;
+}
+
+#accordion div {
+    display: block;
+    font-weight: bold;
+    margin: 1px;
+    cursor: pointer;
+    padding: 3px 3px 3px 4px;
+    list-style: circle;
+    text-align: center;
+    background: url(../imagenes/menu.png) no-repeat scroll center top;
+	background-position: center;
+}
+
+#accordion a{
+	list-style-type: disc;
+}
+
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+#accordion ul{
+    display: none;
+}
+
+#accordion ul li {
+    font-weight: normal;
+    cursor: auto;
+    background-color: #000000;
+  	padding: 2px 2px 2px 2px;
+  	margin: 1px;
+  	background: url(../imagenes/subMenu.png) no-repeat scroll center top;
+}
+
+#accordion a {
+    text-decoration: none;
+    left: 20px;
+  	position: relative;
+  	font: normal bold 14px Arial,Helvetica,sans-serif;
+  	color: black;
+	position: initial;
+}
+
+#accordion a:hover {
+    /*text-decoration: underline;*/
+}
+
+#salir {
+	position: absolute;
+ 	bottom: 0px;
+ 	width: 100%;
+}
+
+#accordion a p {
+	margin: 0px;
+	text-align: center;
+}
+
+#salirBoton {
+	display: block;
+    font-weight: bold;
+    margin: 1px;
+    cursor: pointer;
+    list-style: circle;
+    text-align: center;
+    background: url(../imagenes/menu.png) no-repeat scroll center top;
+	background-position: center;
+	text-decoration: none;
+	list-style: none;
+    width: 170px;
+    margin: 0px;
+    color: #000000;
+}
+
+#usuario {
+	display: block;
+    font-weight: bold;
+    margin: 1px;
+    cursor: default;
+    list-style: circle;
+    text-align: center;
+	background: url(../imagenes/subMenu.png) no-repeat scroll center top;
+	background-position: center;
+	text-decoration: none;
+	list-style: none;
+    width: 170px;
+    margin: 0px;
+    color: #000000;
+}
